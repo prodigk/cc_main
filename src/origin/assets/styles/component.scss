@@ -2,17 +2,19 @@
 //메뉴 아이콘
 $nav-icon :
     (all,0,0),
-    (states,0,-30),
-    (scroll,0,-60),
-    (splash,0,-90),
-    (page,0,-120),
-    (flow,0,-150),
-    (banner,0,-180),
-    (animation,0,-210),
-    (component,0,-240),
-    (navigation,0,-270),
-    (reference,0,-300),
-    (etc,0,-330);
+    (line,0,-30),
+    (area,0,-60),
+    (column,0,-90),
+    (pie,0,-120),
+    (scatter,0,-150),
+    (combinations,0,-180),
+    (style,0,-210),
+    (accessible,0,-240),
+    (dynamic,0,-270),
+    (3d,0,-300),
+    (gauges,0,-330),
+    (heat,0,-360),
+    (more,0,-390);
 //메뉴 아이콘
 $tool-icon :
     (framer,0,0),
@@ -30,8 +32,8 @@ $tool-icon :
     width:25px;
     height:25px;
     margin-right:13px;
-    background:url('../images/nav-comm.png') no-repeat;
-    background-size:85px 355px;
+    background:url('../images/nav-icon.png') no-repeat;
+    background-size:85px 415px;
     vertical-align:top;
   }
 }

@@ -8,18 +8,13 @@
           <div id="tabBar" class="bar_menu" style="width:51px;left:59px;" >
             <div class="inner_bar" style="width: 100%"></div>
           </div>
+          <!-- 메뉴 탭바 위치 data-position, 길이 data-width 조정 -->
           <ul class="list-tab">
             <li>
-              <router-link to="/home" class="link-tab" data-position="60" data-width="50" data-page="/home">Home</router-link>
+              <router-link to="/home" class="link-tab" data-position="61" data-width="50" data-page="/home">Home</router-link>
             </li>
             <li>
-              <router-link to="/update" class="link-tab" data-position="138" data-width="60" data-page="/update">Update</router-link>
-            </li>
-            <li>
-              <router-link to="/docs" class="link-tab" data-position="218" data-width="42" data-page="/docs">Docs</router-link>
-            </li>
-            <li>
-              <router-link to="/about" class="link-tab" data-position="291" data-width="54" data-page="/about">About</router-link>
+              <router-link to="/about" class="link-tab" data-position="138" data-width="54" data-page="/about">About</router-link>
             </li>
           </ul>
         </div>

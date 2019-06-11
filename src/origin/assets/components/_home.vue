@@ -1,30 +1,16 @@
 <template>
   <div id="pageHome" v-bind:class="[toggleView ? 'article-content list-view__mockup':'article-content']">
     <div class="section-home" v-show="!showModal">
-      <ul class="list-type">
-        <li>
-          <a href="javascript:void(0)" class="link-type" v-on:click="toggleView = false" v-bind:class="[toggleView ? '':'link-type__on']">
-            <span class="icon-mockup"></span>
-            Mock up
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="link-type" v-on:click="toggleView = true" v-bind:class="[toggleView ? 'link-type__on':'']">
-            <span class="icon-imagelist"></span>
-            Image List
-          </a>
-        </li>
-      </ul>
-      <div id="boxSearch" class="box-search" v-bind:class="{ 'on-focus': isFocus }">
-        <span class="icon-search"></span>
-        <input type="text" id="searchInp" class="input-search" v-on:focus="isFocus = onFocus()" v-on:blur="isFocus = onBlur()" placeholder="Search Script" v-model="searchItem">
-        <button type="button" class="btn-del" v-on:click="searchDel()">삭제</button>
-      </div>
-      <!-- Framer 영역 -->
-      <div class="view-item" data-tool="framer" id="framer">
+      <div class="section-update">
+      <!-- <h3 class="title-main">CHART CATALOG</h3> -->
+    </div>
+      <!-- Line Chart 영역 -->
+      <div class="view-item" data-tool="line" id="line">
         <div class="list-item">
-          <h3 class="title-sub">Framer Interactions<span class="none-text">목록이 없습니다.</span></h3>
-          <div class="item" v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+          <h3 class="title-sub">Line Charts<span class="none-text">목록이 없습니다.</span></h3>
+          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <div class="list-line"></div>
+          <div class="item" v-for="(tools, index) in lineItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
@@ -35,8 +21,9 @@
               <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
-            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
+            <!--
             <p class="text-desc">{{ tools.desc }}</p>
             <p class="text-type">{{ tools.used }}</p>
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
@@ -44,15 +31,17 @@
               <li v-for="tags in tools.tag" :key="tags">
                 <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
-            </ul>
+            </ul>-->
           </div>
         </div>
       </div>
-      <!-- FramerX 영역 -->
-      <div class="view-item" data-tool="framerX" id="framerx">
+      <!-- Area Chart 영역 -->
+      <div class="view-item" data-tool="area" id="area">
         <div class="list-item">
-          <h3 class="title-sub">FramerX Interactions<span class="none-text">목록이 없습니다.</span></h3>
-          <div class="item" v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+          <h3 class="title-sub">Area Charts<span class="none-text">목록이 없습니다.</span></h3>
+          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <div class="list-line"></div>
+          <div class="item" v-for="(tools, index) in areaItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
@@ -63,8 +52,9 @@
               <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
-            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
+            <!--
             <p class="text-desc">{{ tools.desc }}</p>
             <p class="text-type">{{ tools.used }}</p>
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
@@ -72,123 +62,12 @@
               <li v-for="tags in tools.tag" :key="tags">
                 <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Lottie 영역 -->
-      <div class="view-item" data-tool="lottie" id="lottie">
-        <div class="list-item">
-          <h3 class="title-sub">Lottie Interactions<span class="none-text">목록이 없습니다.</span></h3>
-          <div class="item" v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
-              <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
-                </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
-                </span>
-              </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
-              <span class="box-detail">VIEW MORE</span>
-            </a>
-            <span class="text-cate">{{ typeItem[tools.type] }}</span>
-            <strong class="title-item">{{ tools.title }}</strong>
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Principle 영역 -->
-      <div class="view-item" data-tool="principle" id="principle">
-        <div class="list-item">
-          <h3 class="title-sub">Principle Interactions<span class="none-text">목록이 없습니다.</span></h3>
-          <div class="item" v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
-              <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
-                </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
-                </span>
-              </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
-              <span class="box-detail">VIEW MORE</span>
-            </a>
-            <span class="text-cate">{{ typeItem[tools.type] }}</span>
-            <strong class="title-item">{{ tools.title }}</strong>
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- sketch 영역 -->
-      <div class="view-item" data-tool="sketch" id="sketch">
-        <div class="list-item">
-          <h3 class="title-sub">Sketch Interactions<span class="none-text">목록이 없습니다.</span></h3>
-          <div class="item" v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
-              <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
-                </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
-                </span>
-              </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
-              <span class="box-detail">VIEW MORE</span>
-            </a>
-            <span class="text-cate">{{ typeItem[tools.type] }}</span>
-            <strong class="title-item">{{ tools.title }}</strong>
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- html 영역 -->
-      <div class="view-item" data-tool="html" id="html">
-        <div class="list-item">
-          <h3 class="title-sub">HTML Interactions<span class="none-text">목록이 없습니다.</span></h3>
-          <div class="item" v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
-              <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
-                </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
-                </span>
-              </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
-              <span class="box-detail">VIEW MORE</span>
-            </a>
-            <span class="text-cate">{{ typeItem[tools.type] }}</span>
-            <strong class="title-item">{{ tools.title }}</strong>
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>
+            </ul>-->
           </div>
         </div>
       </div>
     </div>
+    <!-- 상세보기 페이지 -->
     <div class="modal" v-if="showModal">
       <div class="modal-cont">
         <span class="text-cate">{{ modalType }}</span>
@@ -219,6 +98,7 @@
   </div>
 </template>
 
+// 목업 / 이미지 토글
 <script>
   import { BUS } from '../js/eventBus'
   import itemList from '../data/itemList'
@@ -226,11 +106,11 @@
       data : function(){
         return {
           searchItem:'',
-          toggleView:false,
+          toggleView:true,
           toggleTag:false,
           typeItem : itemList.typeList,
-          framerItem : itemList.item.framer,
-          framerXItem : itemList.item.framerX,
+          lineItem : itemList.item.line,
+          areaItem : itemList.item.area,
           lottieItem : itemList.item.lottie,
           principleItem : itemList.item.principle,
           sketchItem : itemList.item.sketch,
@@ -248,8 +128,8 @@
       },
       methods : {
         resetList() {
-          this.framerItem=itemList.item.framer,
-          this.framerXItem=itemList.item.framerX,
+          this.lineItem=itemList.item.line,
+          this.areaItem=itemList.item.area,
           this.lottieItem=itemList.item.lottie,
           this.principleItem=itemList.item.principle,
           this.sketchItem=itemList.item.sketch,
@@ -265,8 +145,8 @@
           this.showModal = false;
           if(cate == 0){
           } else {
-            return this.framerItem = this.framerItem.filter(function(e){return e.type == cate}),
-                    this.framerXItem = this.framerXItem.filter(function(e){return e.type == cate}),
+            return this.lineItem = this.lineItem.filter(function(e){return e.type == cate}),
+                    this.areaItem = this.areaXItem.filter(function(e){return e.type == cate}),
                     this.lottieItem = this.lottieItem.filter(function(e){return e.type == cate}),
                     this.principleItem = this.principleItem.filter(function(e){return e.type == cate}),
                     this.sketchItem = this.sketchItem.filter(function(e){return e.type == cate}),

@@ -1,7 +1,7 @@
 <template>
   <div class="section-sidebar">
     <h1 class="title-logo">
-      <img src="../images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
+      <img src="../images/cc-logo.png" width="150" height="40" class="logo-img" alt="CHARTS CATALOG">
     </h1>
     <button type="button" class="btn-fold" v-on:click="selSidebar(toggleBar = !toggleBar)"><span class="icon-fold">메뉴 접기</span></button>
     <div class="box-nav">
@@ -19,8 +19,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(1))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-states"></span>
-              <strong class="title-cate">States</strong>
+              <span class="nav-icon icon-line"></span>
+              <strong class="title-cate">Line charts</strong>
               <span class="count-cate">({{ filteredCount(1).length }})</span>
             </router-link>
           </div>
@@ -28,8 +28,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(2))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-scroll"></span>
-              <strong class="title-cate">Scroll</strong>
+              <span class="nav-icon icon-area"></span>
+              <strong class="title-cate">Area charts</strong>
               <span class="count-cate">({{ filteredCount(2).length }})</span>
             </router-link>
           </div>
@@ -37,8 +37,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(3))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-splash"></span>
-              <strong class="title-cate">Splash</strong>
+              <span class="nav-icon icon-column"></span>
+              <strong class="title-cate">Column and bar charts</strong>
               <span class="count-cate">({{ filteredCount(3).length }})</span>
             </router-link>
           </div>
@@ -46,8 +46,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(4))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-page"></span>
-              <strong class="title-cate">Page</strong>
+              <span class="nav-icon icon-pie"></span>
+              <strong class="title-cate">Pie charts</strong>
               <span class="count-cate">({{ filteredCount(4).length }})</span>
             </router-link>
           </div>
@@ -55,8 +55,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(5))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-flow"></span>
-              <strong class="title-cate">Flow</strong>
+              <span class="nav-icon icon-scatter"></span>
+              <strong class="title-cate">Scatter and bubble charts</strong>
               <span class="count-cate">({{ filteredCount(5).length }})</span>
             </router-link>
           </div>
@@ -64,8 +64,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(6))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-banner"></span>
-              <strong class="title-cate">Banner</strong>
+              <span class="nav-icon icon-combinations"></span>
+              <strong class="title-cate">combinations</strong>
               <span class="count-cate">({{ filteredCount(6).length }})</span>
             </router-link>
           </div>
@@ -73,8 +73,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(7))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-animation"></span>
-              <strong class="title-cate">Animation</strong>
+              <span class="nav-icon icon-style"></span>
+              <strong class="title-cate">Styled mode (CSS styling)</strong>
               <span class="count-cate">({{ filteredCount(7).length }})</span>
             </router-link>
           </div>
@@ -82,8 +82,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(8))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-component"></span>
-              <strong class="title-cate">UI Component</strong>
+              <span class="nav-icon icon-accessible"></span>
+              <strong class="title-cate">Accessible charts</strong>
               <span class="count-cate">({{ filteredCount(8).length }})</span>
             </router-link>
           </div>
@@ -91,8 +91,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(9))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-navigation"></span>
-              <strong class="title-cate">Menu Navigation</strong>
+              <span class="nav-icon icon-dynamic"></span>
+              <strong class="title-cate">Dynamic charts</strong>
               <span class="count-cate">({{ filteredCount(9).length }})</span>
             </router-link>
           </div>
@@ -100,8 +100,8 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(10))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-reference"></span>
-              <strong class="title-cate">Reference</strong>
+              <span class="nav-icon icon-3d"></span>
+              <strong class="title-cate">3D charts</strong>
               <span class="count-cate">({{ filteredCount(10).length }})</span>
             </router-link>
           </div>
@@ -109,8 +109,26 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="nav-icon icon-etc"></span>
-              <strong class="title-cate">ETC</strong>
+              <span class="nav-icon icon-gauges"></span>
+              <strong class="title-cate">Gauges</strong>
+              <span class="count-cate">({{ filteredCount(11).length }})</span>
+            </router-link>
+          </div>
+        </li>
+        <li>
+          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
+            <router-link to="/home">
+              <span class="nav-icon icon-heat"></span>
+              <strong class="title-cate">Heat and tree maps</strong>
+              <span class="count-cate">({{ filteredCount(11).length }})</span>
+            </router-link>
+          </div>
+        </li>
+        <li>
+          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
+            <router-link to="/home">
+              <span class="nav-icon icon-more"></span>
+              <strong class="title-cate">More chart types</strong>
               <span class="count-cate">({{ filteredCount(11).length }})</span>
             </router-link>
           </div>
@@ -118,54 +136,9 @@
       </ul>
     </div>
     <div class="box-tools">
-      <h2 class="title-nav">tools</h2>
-      <ul class="nav-tools">
-        <li v-on:click="selTools"  v-scroll-to="'#framer'">
-          <router-link to="/home" class="link-nav">
-            <span class="tools-icon framer"></span>
-            <strong class="title-cate">Framer</strong>
-          </router-link>
-        </li>
-        <li v-on:click="selTools"  v-scroll-to="'#framerx'">
-          <router-link to="/home" class="link-nav">
-            <span class="tools-icon framerx"></span>
-            <strong class="title-cate">Framer X</strong>
-          </router-link>
-        </li>
-        <li v-on:click="selTools"  v-scroll-to="'#lottie'">
-          <router-link to="/home" class="link-nav">
-            <span class="tools-icon lottie"></span>
-            <strong class="title-cate">Lottie</strong>
-          </router-link>
-        </li>
-        <li v-on:click="selTools"  v-scroll-to="'#principle'">
-          <router-link to="/home" class="link-nav">
-            <span class="tools-icon principle"></span>
-            <strong class="title-cate">Principle</strong>
-          </router-link>
-        </li>
-        <li v-on:click="selTools"  v-scroll-to="'#sketch'">
-          <router-link to="/home" class="link-nav">
-            <span class="tools-icon sketch"></span>
-            <strong class="title-cate">Sketch</strong>
-          </router-link>
-        </li>
-        <li v-on:click="selTools"  v-scroll-to="'#html'">
-          <router-link to="/home" class="link-nav">
-            <span class="tools-icon HTML"></span>
-            <strong class="title-cate">HTML</strong>
-          </router-link>
-        </li>
-      </ul>
+      <a href="https://cloud.highcharts.com/create" target="_blank"><img src="../images/btn-highcarts.png" width="240" height="60" class=".btn-hightcharts" alt="Hightcharts Cloud"></a>
     </div>
-    <div class="box-tag">
-      <h2 class="title-tag">script Tag</h2>
-      <ul class="nav-tag">
-        <li v-for="tags in filteredTags()" :key="tags">
-          <div v-on:click="selTags(tags)" v-scroll-to="'#wrapContainer'"><router-link to="/home" class="link-tag">{{ tags }}</router-link></div>
-        </li>
-      </ul>
-    </div>
+    
     <div class="service-copyright">
       <img src="../images/sk-planet-logo@2x.png" width="72" height="34" alt="">
       <small>COPYRIGHT © SK PLANET CO.<br> LTD. ALL RIGHTS RESERVED.</small>
@@ -183,8 +156,8 @@
           toggleBar: false,
           typeItem : itemList.typeList,
           toolItem : itemList.item,
-          framerItem : itemList.item.framer,
-          framerXItem : itemList.item.framerX,
+          lineItem : itemList.item.line,
+          areaItem : itemList.item.area,
           lottieItem : itemList.item.lottie,
           principleItem : itemList.item.principle,
           sketchItem : itemList.item.sketch,
@@ -211,7 +184,7 @@
           return cate
         },
         filteredCount: function(e) {
-          let allItem = this.framerItem.concat(this.framerXItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
+          let allItem = this.lineItem.concat(this.areaItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
           if(e == 0){
             return allItem
           } else if (e == 1) {
@@ -236,10 +209,14 @@
             return allItem.filter(function(i){return i.type == 10})
           } else if (e == 11) {
             return allItem.filter(function(i){return i.type == 11})
+          } else if (e == 12) {
+            return allItem.filter(function(i){return i.type == 12})
+          } else if (e == 13) {
+            return allItem.filter(function(i){return i.type == 13})
           }
         },
         filteredTags : function() {
-          let allItem = this.framerItem.concat(this.framerXItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
+          let allItem = this.lineItem.concat(this.areaItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
           let key = 'tag';
           let tagArray = new Array();
           for(let i =0;i<allItem.length;i++){

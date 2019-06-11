@@ -1,14 +1,16 @@
 //color palette
 
-$primary : #0021ff;
+$primary : #EA513B;
 $secondary : #7148e9;
-$ink : #000;
+$ink : #323743;
 $gray90 : #333;
 $gray80 : #4a4a4a;
+$gray60 : #707070;
 $gray45 : #9b9b9b;
 $gray40 : #b3b3b3;
 $gray30 : #ccc;
 $gray20 : #eee;
+$background : #fbfbfb;
 
 
 
@@ -23,7 +25,7 @@ $gray20 : #eee;
 }
 
 @mixin head-lv1 {
-  @include font-style(32px,36px,700,$ink,-0.3px)
+  @include font-style(40px,36px,700,$ink,-0.3px)
 }
 @mixin head-lv2 {
   @include font-style(24px,28px,700,$ink,-0.17px)

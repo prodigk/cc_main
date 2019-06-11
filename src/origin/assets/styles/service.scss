@@ -3,6 +3,7 @@
 html,body {
   width:100%;
   height:100%;
+  background-color: #fbfbfb;
 }
 .wrap-container {
   position:relative;
@@ -22,7 +23,7 @@ html,body {
 .nav-wrap {
   li {
     overflow:hidden;
-    height:25px;
+    height:30px;
     margin-bottom:10px;
     &:last-child {
       margin-bottom:26px
@@ -67,7 +68,7 @@ html,body {
   &:before {
     display:block;
     width:180px;
-    height:1px;
+    height:0px;
     margin-left:-10px;
     background:$gray20;
     content:'';
@@ -76,6 +77,8 @@ html,body {
 
 //tools
 .box-tools {
+  margin-top: 40px;
+  margin-bottom: 100px;
   .title-nav {
     @include screen-out;
   }
@@ -123,7 +126,7 @@ html,body {
 }
 
 //사이드바
-$nav-height: 260;
+$nav-height: 300;
 .section-sidebar {
   overflow-x:hidden;
   overflow-y:auto;
@@ -146,7 +149,7 @@ $nav-height: 260;
     position:relative;
     height:40px;
     left:0;
-    margin-bottom:74px;
+    margin-bottom:64px;
     transition:left .5s;
     img {
       opacity:1;
@@ -174,6 +177,9 @@ $nav-height: 260;
       background-size:24px;
       @include ir-pm;
     }
+  .btn-hightcharts {
+    position: absolute;
+  }
   }
   .service-copyright {
     padding-top:75px;
@@ -221,7 +227,7 @@ $nav-height: 260;
         background-size:24px;
       }
     }
-    .box-tag,.service-copyright {
+    .box-tools,.box-tag,.service-copyright {
       overflow:hidden;
       width:0;
       height:0;
@@ -243,7 +249,7 @@ $nav-height: 260;
   width:100%;
   padding-left:$nav-height + px;
   box-sizing:border-box;
-  padding:163px 0 250px;
+  padding:110px 0 250px;
   .heading-content {
     @include screen-out;
   }
@@ -254,7 +260,7 @@ $nav-height: 260;
     padding-left:80px;
   }
 }
-#pageUpdate,#pageAbout,#pageDocs,.view-item,.box-search {
+#pageAbout,.view-item,.box-search {
   animation-duration: .15s;
   animation-name: show-in;
   animation-timing-function :ease-in-out;
@@ -372,14 +378,14 @@ $nav-height: 260;
 .wrap_tab {
   position:absolute;
   top:63px;
-  left:0;
+  right:-400px;
   z-indeX:9999;
   width:100%;
   min-width:1178px
 }
 .view-tab {
   position:relative;
-  width:400px;
+  width:200px;
   margin:0 auto;
   .bar_menu {
     position:absolute;
@@ -389,13 +395,13 @@ $nav-height: 260;
   }
   .inner_bar {
     width:100%;
-    height:3px;
+    height:2px;
     background:$primary;
   }
   .list-tab {
     width:100%;
     height:34px;
-    text-align:center;
+    text-align:right;
     li {
       display:inline-block;
       width:50px;
@@ -440,13 +446,29 @@ $nav-height: 260;
 // 목록 리스트
 .view-item {
   padding-top:25px;
-  padding-left:50px;
+  padding-left:0px;
+}
+.title-main {
+  margin-bottom:40px;
+  @include head-lv1;
 }
 .title-sub {
-  margin-bottom:40px;
+  margin-bottom: 15px;
   @include head-lv2;
 }
-.list-item .title-sub:first-child:last-child {
+.list-desc {
+  margin-bottom:10px;
+  @include head-lv5;
+  line-height: 1.6;
+  color: $gray80;
+}
+.list-line {
+  margin-bottom: 30px;
+  width: 80px;
+  height: 2px;
+  background: $gray60;
+}
+.list-item, .list-desc, .title-sub:first-child:last-child {
   .none-text {
     display:block;
   }
@@ -538,7 +560,7 @@ $nav-height: 260;
     @include font-style-item(block,16px,22px,$primary,bold);
   }
   .title-item {
-    @include font-style-item(block,32px,36px,$ink,700);
+    @include font-style-item(block,32px,36px,$ink,500);
     padding-bottom:14px;
     letter-spacing:-1px;
   }
@@ -573,11 +595,11 @@ $nav-height: 260;
 
 //image view
 $view-size__width:230px;
-$view-size__height:197px;
+$view-size__height:160px;
 .list-view__mockup {
   .list-item > .item {
     width:230px;
-    height:350px;
+    height:240px;
     padding:0;
     margin:0 30px 20px 0;
     &:before {
@@ -602,6 +624,7 @@ $view-size__height:197px;
       }
     }
 
+  // 리스트 내용
     .link-thumb {
       display:block;
       width:$view-size__width;
@@ -619,6 +642,7 @@ $view-size__height:197px;
         background-size:cover;
         background-position:50%;
         background-repeat:no-repeat;
+        box-shadow:3px 0px 8px 0px rgba(0,0,0,0.03);
       }
     }
     .box-detail,.text-type,.wrap-tag{
@@ -631,7 +655,8 @@ $view-size__height:197px;
     }
     .title-item {
       overflow:hidden;
-      font-size:18px;
+      padding-top: 5px;
+      font-size:14px;
       line-height:22px;
       letter-spacing:-0.5px;
       -ms-text-overflow: ellipsis;
@@ -670,9 +695,9 @@ $view-size__height:197px;
 .section-update,
 .section-about,
 .section-docx {
-  width:847px;
-  margin:0 auto;
-  .title-sub {
+  width:1150px;
+  margin:0px auto;
+  .title-main {
     @include head-lv1;
   }
   .desc-sub {
@@ -747,6 +772,7 @@ $view-size__height:197px;
 
 // 어바웃
 .section-about {
+  margin: 26px auto;
   .box-about{
     padding-bottom:80px;
     > img {
