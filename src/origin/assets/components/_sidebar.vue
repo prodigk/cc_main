@@ -136,6 +136,47 @@
       </ul>
     </div>
     <div class="box-tools">
+      <h2 class="title-nav">tools</h2>
+      <ul class="nav-tools">
+        <li v-on:click="selTools"  v-scroll-to="'#line'">
+          <router-link to="/home" class="link-nav">
+            <span class="tools-icon framer"></span>
+            <strong class="title-cate">Rubix Brain</strong>
+          </router-link>
+        </li>
+        <li v-on:click="selTools"  v-scroll-to="'#area'">
+          <router-link to="/home" class="link-nav">
+            <span class="tools-icon framerx"></span>
+            <strong class="title-cate">대기질 모니터링 솔루션</strong>
+          </router-link>
+        </li>
+        <li v-on:click="selTools"  v-scroll-to="'#lottie'">
+          <router-link to="/home" class="link-nav">
+            <span class="tools-icon lottie"></span>
+            <strong class="title-cate">DMP</strong>
+          </router-link>
+        </li>
+        <li v-on:click="selTools"  v-scroll-to="'#principle'">
+          <router-link to="/home" class="link-nav">
+            <span class="tools-icon principle"></span>
+            <strong class="title-cate">Appmon</strong>
+          </router-link>
+        </li>
+        <!-- <li v-on:click="selTools"  v-scroll-to="'#sketch'">
+          <router-link to="/home" class="link-nav">
+            <span class="tools-icon sketch"></span>
+            <strong class="title-cate">Sketch</strong>
+          </router-link>
+        </li>
+        <li v-on:click="selTools"  v-scroll-to="'#html'">
+          <router-link to="/home" class="link-nav">
+            <span class="tools-icon HTML"></span>
+            <strong class="title-cate">HTML</strong>
+          </router-link>
+        </li> -->
+      </ul>
+    </div>
+    <div class="box-tools">
       <a href="https://cloud.highcharts.com/create" target="_blank"><img src="../images/btn-highcarts.png" width="240" height="60" class=".btn-hightcharts" alt="Hightcharts Cloud"></a>
     </div>
     

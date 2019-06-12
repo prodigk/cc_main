@@ -6,7 +6,7 @@
       <ul class="list-docs">
         <li v-for="(docs, index) in docsItem" :key="index">
           <strong class="title-docs">{{ docs.title }}</strong>
-          <p class="text-docs"v-html="docs.text"></p>
+          <p class="text-docs" v-html="docs.text"></p>
         </li>
       </ul>
     </div>
