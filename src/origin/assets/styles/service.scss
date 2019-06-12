@@ -612,8 +612,8 @@ $view-size__height:160px;
       opacity:0;
       border-radius:2px;
       pointer-events:none;
-      //background:rgba(0,20,61,.04);
-      box-shadow:5px 0px 50px 3px rgba(0,0,0,0.1);
+      background:rgba(0,20,61,.04);
+      // box-shadow:5px 0px 50px 3px rgba(0,0,0,0.1);
       content:'';
       transform: scale(.90);
       transition: background .1s;
@@ -773,6 +773,7 @@ $view-size__height:160px;
 // 어바웃
 .section-about {
   margin: 26px auto;
+  width: 820px;
   .box-about{
     padding-bottom:80px;
     > img {

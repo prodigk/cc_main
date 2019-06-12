@@ -162,43 +162,11 @@ const itemList = {
     ],
     area: [
       {
-        id: 5,
+        id: 1,
         type: 2,
-        title: "08. Spline with plot bands",
+        title: "01. Basic area",
         jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_05.jpg",
-        gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
-        date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 4,
-        type: 2,
-        title: "08. Spline with plot bands",
-        jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_04.jpg",
-        gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
-        date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 3,
-        type: 2,
-        title: "08. Spline with plot bands",
-        jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/area_01.jpg",
         gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
         desc:
           "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
@@ -212,7 +180,7 @@ const itemList = {
       {
         id: 2,
         type: 2,
-        title: "08. Spline with plot bands",
+        title: "02. Area with negative values",
         jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
         jpgImg_s: "http://ux.skplanet.com/chart/images/area_02.jpg",
         gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
@@ -226,11 +194,43 @@ const itemList = {
           '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
-        id: 1,
+        id: 3,
         type: 2,
-        title: "08. Spline with plot bands",
+        title: "03. Stacked area",
         jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/area_03.jpg",
+        gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
+        desc:
+          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
+        used: "활용영역 : 북마크 저장, 찜하기",
+        url: "https://framer.cloud/MLuOd",
+        date: "2018-4-20",
+        tag: ["#states", "#switchInstant", "#if else"],
+        source:
+          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 2,
+        title: "04. Percentage area",
+        jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/area_04.jpg",
+        gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
+        desc:
+          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
+        used: "활용영역 : 북마크 저장, 찜하기",
+        url: "https://framer.cloud/MLuOd",
+        date: "2018-4-20",
+        tag: ["#states", "#switchInstant", "#if else"],
+        source:
+          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 5,
+        type: 2,
+        title: "05. Area with missing points",
+        jpgImg: "https://prodigk.github.io/ic_data/images/fs_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/area_05.jpg",
         gifImg: "https://prodigk.github.io/ic_data/images/f01.gif",
         desc:
           "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
