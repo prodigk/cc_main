@@ -132,8 +132,9 @@ $tool-icon :
     position:relative;
     width:1050px;
     margin:0 auto;
-    padding-left:140px;
+    padding: 50px 0px 0px 20px;
     box-sizing:border-box;
+    // background-color: black;
   }
   .text-cate {
     display:block;
@@ -169,35 +170,40 @@ $tool-icon :
     margin-top:10px;
   }
   .detail-cont {
+    // background-color: aqua;
     overflow:hidden;
-    width:950px;
+    width: 1010px;
     padding-top:35px;
-    .detail-phone {
+    .detail-graph {
       float:left;
-      width:355px;
-      .bg-phone {
+      width:1050px;
+      height: 400px;
+      .bg-graph {
         display:block;
-        width:355px;
-        height:743px;
-        padding-top:85px;
+        width: 1010px;
+        height:400px;
+        padding-top: 0px;
         box-sizing:border-box;
         // background:url('../images/body@3x.png') no-repeat;
         background-position:50% 0;
-        background-size:355px 743px;
+        background-size:1010px 330px;
+        box-shadow:3px 0px 8px 0px rgba(0,0,0,0.1);
       }
       .box-gif {
         display:block;
-        width:322px;
-        height:572px;
+        width:980px;
+        height:330px;
         margin:0 auto;
         background-size:cover;
+        background-color: chocolate;
         background-position:50%;
         background-repeat:no-repeat;
       }
     }
     .detail-code {
-      float:right;
-      width:560px;
+      float: left;
+      width: 1010px;
+      padding-top: 0px;
     }
     .link-example {
       margin-top:37px;

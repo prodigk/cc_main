@@ -504,7 +504,7 @@ $nav-height: 300;
     left:0;
     width:190px;
     height:397px;
-    // background:url('../images/body@3x.png') no-repeat;
+    //background:url('../images/body@3x.png') no-repeat;
     background-size:190px 397px;
     .box-gif,.box-photo {
       position:absolute;
@@ -520,6 +520,7 @@ $nav-height: 300;
         vertical-align:top;
         width:172px;
         height:306px;
+        //box-shadow:5px 0px 50px 3px rgba(0,0,0,0.1);
       }
     }
     .box-gif {
@@ -613,7 +614,7 @@ $view-size__height:160px;
       border-radius:2px;
       pointer-events:none;
       background:rgba(0,20,61,.04);
-      // box-shadow:5px 0px 50px 3px rgba(0,0,0,0.1);
+      box-shadow:5px 0px 50px 3px rgba(0,0,0,0.1);
       content:'';
       transform: scale(.90);
       transition: background .1s;

@@ -82,8 +82,8 @@
         <p class="text-desc">{{ modalDesc }}</p>
         <p class="text-type">{{ modalUsed }}</p>
         <div class="detail-cont">
-          <div class="detail-phone">
-            <span class="bg-phone">
+          <div class="detail-graph">
+            <span class="bg-graph">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + modalImg + ')' }"></span>
             </span>
             <a v-bind:href="modalUrl" class="link-example" target="_blank">{{ modalUrl }}</a>

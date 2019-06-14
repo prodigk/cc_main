@@ -1,7 +1,7 @@
 <template>
   <div class="section-sidebar">
     <h1 class="title-logo">
-      <img src="../images/cc-logo.png" width="150" height="40" class="logo-img" alt="CHARTS CATALOG">
+      <img src="../images/cc-logo.png" width="150" height="40" class="logo-img" alt="Charts CATALOG">
     </h1>
     <button type="button" class="btn-fold" v-on:click="selSidebar(toggleBar = !toggleBar)"><span class="icon-fold">메뉴 접기</span></button>
     <div class="box-nav">
@@ -20,7 +20,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(1))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-line"></span>
-              <strong class="title-cate">Line charts</strong>
+              <strong class="title-cate">Line Charts</strong>
               <span class="count-cate">({{ filteredCount(1).length }})</span>
             </router-link>
           </div>
@@ -29,7 +29,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(2))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-area"></span>
-              <strong class="title-cate">Area charts</strong>
+              <strong class="title-cate">Area Charts</strong>
               <span class="count-cate">({{ filteredCount(2).length }})</span>
             </router-link>
           </div>
@@ -38,7 +38,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(3))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-column"></span>
-              <strong class="title-cate">Column and bar charts</strong>
+              <strong class="title-cate">Column & Bar Charts</strong>
               <span class="count-cate">({{ filteredCount(3).length }})</span>
             </router-link>
           </div>
@@ -47,7 +47,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(4))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-pie"></span>
-              <strong class="title-cate">Pie charts</strong>
+              <strong class="title-cate">Pie Charts</strong>
               <span class="count-cate">({{ filteredCount(4).length }})</span>
             </router-link>
           </div>
@@ -56,7 +56,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(5))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-scatter"></span>
-              <strong class="title-cate">Scatter and bubble charts</strong>
+              <strong class="title-cate">Scatter & Bubble Charts</strong>
               <span class="count-cate">({{ filteredCount(5).length }})</span>
             </router-link>
           </div>
@@ -65,7 +65,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(6))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-combinations"></span>
-              <strong class="title-cate">combinations</strong>
+              <strong class="title-cate">Combinations</strong>
               <span class="count-cate">({{ filteredCount(6).length }})</span>
             </router-link>
           </div>
@@ -83,7 +83,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(8))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-accessible"></span>
-              <strong class="title-cate">Accessible charts</strong>
+              <strong class="title-cate">Accessible Charts</strong>
               <span class="count-cate">({{ filteredCount(8).length }})</span>
             </router-link>
           </div>
@@ -92,7 +92,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(9))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-dynamic"></span>
-              <strong class="title-cate">Dynamic charts</strong>
+              <strong class="title-cate">Dynamic Charts</strong>
               <span class="count-cate">({{ filteredCount(9).length }})</span>
             </router-link>
           </div>
@@ -101,7 +101,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(10))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-3d"></span>
-              <strong class="title-cate">3D charts</strong>
+              <strong class="title-cate">3D Charts</strong>
               <span class="count-cate">({{ filteredCount(10).length }})</span>
             </router-link>
           </div>
@@ -119,7 +119,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-heat"></span>
-              <strong class="title-cate">Heat and tree maps</strong>
+              <strong class="title-cate">Heat & Tree Maps</strong>
               <span class="count-cate">({{ filteredCount(11).length }})</span>
             </router-link>
           </div>
@@ -128,7 +128,7 @@
           <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-more"></span>
-              <strong class="title-cate">More chart types</strong>
+              <strong class="title-cate">More Chart Types</strong>
               <span class="count-cate">({{ filteredCount(11).length }})</span>
             </router-link>
           </div>
@@ -177,7 +177,7 @@
       </ul>
     </div>
     <div class="box-tools">
-      <a href="https://cloud.highcharts.com/create" target="_blank"><img src="../images/btn-highcarts.png" width="240" height="60" class=".btn-hightcharts" alt="Hightcharts Cloud"></a>
+      <a href="https://cloud.highCharts.com/create" target="_blank"><img src="../images/btn-highcarts.png" width="240" height="60" class=".btn-hightCharts" alt="HightCharts Cloud"></a>
     </div>
     
     <div class="service-copyright">
