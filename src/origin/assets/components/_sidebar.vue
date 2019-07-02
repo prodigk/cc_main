@@ -135,7 +135,7 @@
         </li>
       </ul>
     </div>
-    <div class="box-tools">
+    <!-- <div class="box-tools">
       <h2 class="title-nav">tools</h2>
       <ul class="nav-tools">
         <li v-on:click="selTools"  v-scroll-to="'#line'">
@@ -162,7 +162,7 @@
             <strong class="title-cate">Appmon</strong>
           </router-link>
         </li>
-        <!-- <li v-on:click="selTools"  v-scroll-to="'#sketch'">
+        <li v-on:click="selTools"  v-scroll-to="'#sketch'">
           <router-link to="/home" class="link-nav">
             <span class="tools-icon sketch"></span>
             <strong class="title-cate">Sketch</strong>
@@ -173,9 +173,9 @@
             <span class="tools-icon HTML"></span>
             <strong class="title-cate">HTML</strong>
           </router-link>
-        </li> -->
+        </li> 
       </ul>
-    </div>
+    </div> -->
     <div class="box-tools">
       <a href="https://cloud.highCharts.com/create" target="_blank"><img src="../images/btn-highcarts.png" width="240" height="60" class=".btn-hightCharts" alt="HightCharts Cloud"></a>
     </div>

@@ -73,11 +73,11 @@
         <span class="text-cate">{{ modalType }}</span>
         <div class="title">
           <strong class="title-item">{{ modalTitle }}</strong>
-          <ul class="wrap-tag">
+          <!-- <ul class="wrap-tag">
             <li v-for="tags in modalTag" :key="tags">
               <span class="link-tag on-tag">{{ tags }}</span>
             </li>
-          </ul>
+          </ul> -->
         </div>
         <p class="text-desc">{{ modalDesc }}</p>
         <p class="text-type">{{ modalUsed }}</p>
@@ -86,7 +86,7 @@
             <span class="bg-graph">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + modalImg + ')' }"></span>
             </span>
-            <a v-bind:href="modalUrl" class="link-example" target="_blank">{{ modalUrl }}</a>
+            <!-- <a v-bind:href="modalUrl" class="link-example" target="_blank">{{ modalUrl }}</a> -->
           </div>
           <div class="detail-code" v-html="modalSource"></div>
         </div>

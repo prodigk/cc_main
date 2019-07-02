@@ -171,27 +171,27 @@ $tool-icon :
   }
   .detail-cont {
     // background-color: aqua;
-    overflow:hidden;
-    width: 1010px;
+    // overflow:hidden;
+    width: 1050px;
+    // height: 200px;
     padding-top:35px;
     .detail-graph {
-      float:left;
-      width:1050px;
-      height: 400px;
+      width: 1050px;
+      height: 330px;
       .bg-graph {
         display:block;
-        width: 1010px;
-        height:400px;
+        width: 1050px;
+        height:330px;
         padding-top: 0px;
         box-sizing:border-box;
         // background:url('../images/body@3x.png') no-repeat;
-        background-position:50% 0;
-        background-size:1010px 330px;
+        // background-position:50% 0;
+        // background-size:1010px 330px;
         box-shadow:3px 0px 8px 0px rgba(0,0,0,0.1);
       }
       .box-gif {
         display:block;
-        width:980px;
+        width:1050px;
         height:330px;
         margin:0 auto;
         background-size:cover;
@@ -202,8 +202,10 @@ $tool-icon :
     }
     .detail-code {
       float: left;
-      width: 1010px;
-      padding-top: 0px;
+      width: 1050px;
+      height: 540px;
+      padding-top: 20px;
+      padding-bottom: 200px;
     }
     .link-example {
       margin-top:37px;
