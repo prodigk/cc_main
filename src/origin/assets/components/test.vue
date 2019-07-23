@@ -17,7 +17,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(1))" v-scroll-to="'#line'">
+          <div class="link-nav" v-on:click="selCate(filterCate(1))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-line"></span>
               <strong class="title-cate">Line Charts</strong>
@@ -26,7 +26,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(2))" v-scroll-to="'#area'">
+          <div class="link-nav" v-on:click="selCate(filterCate(2))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-area"></span>
               <strong class="title-cate">Area Charts</strong>
@@ -35,7 +35,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(3))" v-scroll-to="'#bar'">
+          <div class="link-nav" v-on:click="selCate(filterCate(3))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-column"></span>
               <strong class="title-cate">Column & Bar Charts</strong>
@@ -44,7 +44,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(4))" v-scroll-to="'#pie'">
+          <div class="link-nav" v-on:click="selCate(filterCate(4))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-pie"></span>
               <strong class="title-cate">Pie Charts</strong>
@@ -53,7 +53,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(5))" v-scroll-to="'#scatter'">
+          <div class="link-nav" v-on:click="selCate(filterCate(5))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-scatter"></span>
               <strong class="title-cate">Scatter & Bubble Charts</strong>
@@ -62,7 +62,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(6))" v-scroll-to="'#combinations'">
+          <div class="link-nav" v-on:click="selCate(filterCate(6))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-combinations"></span>
               <strong class="title-cate">Combinations</strong>
@@ -71,7 +71,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(7))" v-scroll-to="'#styled'">
+          <div class="link-nav" v-on:click="selCate(filterCate(7))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-style"></span>
               <strong class="title-cate">Styled mode (CSS styling)</strong>
@@ -80,7 +80,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(8))" v-scroll-to="'#accessible'">
+          <div class="link-nav" v-on:click="selCate(filterCate(8))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-accessible"></span>
               <strong class="title-cate">Accessible Charts</strong>
@@ -89,7 +89,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(9))" v-scroll-to="'#dynamic'">
+          <div class="link-nav" v-on:click="selCate(filterCate(9))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-dynamic"></span>
               <strong class="title-cate">Dynamic Charts</strong>
@@ -98,7 +98,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(10))" v-scroll-to="'#d3'">
+          <div class="link-nav" v-on:click="selCate(filterCate(10))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-3d"></span>
               <strong class="title-cate">3D Charts</strong>
@@ -107,7 +107,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#gauges'">
+          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-gauges"></span>
               <strong class="title-cate">Gauges</strong>
@@ -116,7 +116,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#heatmap'">
+          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-heat"></span>
               <strong class="title-cate">Heat & Tree Maps</strong>
@@ -125,7 +125,7 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#more'">
+          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
               <span class="nav-icon icon-more"></span>
               <strong class="title-cate">More Chart Types</strong>
@@ -210,10 +210,6 @@
           gaugesItem : itemList.item.gauges,
           heatmapItem : itemList.item.heatmap,
           moreItem : itemList.item.more,
-          lottieItem : itemList.item.lottie,
-          principleItem : itemList.item.principle,
-          sketchItem : itemList.item.sketch,
-          htmlItem : itemList.item.html,
         }
       },
       methods: {
@@ -236,7 +232,7 @@
           return cate
         },
         filteredCount: function(e) {
-          let allItem = this.lineItem.concat(this.areaItem,this.barItem,this.pieItem,this.scatterItem,this.combinationsItem,this.styledItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
+          let allItem = this.lineItem.concat(this.areaItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
           if(e == 0){
             return allItem
           } else if (e == 1) {

@@ -2,19 +2,19 @@ const itemList = {
   typeList: {
     // 카테고리 리스트
     0: "All",
-    1: "Line Charts",
-    2: "Area Charts",
-    3: "Column and Bar Charts",
-    4: "Pie Charts",
-    5: "Scatter and Bubble Charts",
-    6: "Combinations",
-    7: "Styled Mode (CSS Styling)",
-    8: "Accessible Charts",
-    9: "Dynamic Charts",
-    10: "3D Charts",
-    11: "Gauges",
-    12: "Heat and Tree Maps",
-    13: "More Chart Types"
+    1: "line",
+    2: "area",
+    3: "bar",
+    4: "pie",
+    5: "scatter",
+    6: "combinations",
+    7: "styled",
+    8: "accessible",
+    9: "dynamic",
+    10: "d3",
+    11: "gauges",
+    12: "heatmap",
+    13: "more"
   },
   item: {
     /*framer: [ // TOOL 명
@@ -34,132 +34,100 @@ const itemList = {
   } */
     line: [
       {
-        id: 8,
+        id: 1,
         type: 1,
         title: "01. Basic line",
-        jpgImg: "http://ux.skplanet.com/chart/images/line_img_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_08.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/line_img_01.jpg",
+        jpgImg: "http://ux.skplanet.com/chart/images/01_line_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/01_line_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/01_line_01.jpg",
         desc: 
-          "이미지와 배경을 분리하여 트랜지션 적용",
-        used: "활용영역 : FAB, 메인화면, 네비게이션",
-        url: "//codepen.io/ugen/embed/MRMZvW",
+          "시간의 경과에 따른 데이터 추세를 살펴볼 때 사용합니다.",
+        used: "C.link / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#PageComponent", "#for in", "#Array", "#Utils.modulate", "#states"],
+        tag: ["#line"],
         source:
-          '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/ydKZgM/?height=540&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 7,
-        type: 1,
-        title: "02. Ajax loaded data, clickable points",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_07.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_07.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f07.gif",
-        desc:
-          "화면 영역 탭시 다음 스크린으로 이동. 뒤로가기 버튼 탭시 이전페이지로 이동",
-        used: "활용영역 : 화면단위 Flow 확인",
-        url: "https://framer.cloud/wkZiY",
-        date: "2018-4-20",
-        tag: ["#FlowComponent"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/PgrXKB/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 6,
-        type: 1,
-        title: "03. With data labels",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_06.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_06.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f06.gif",
-        desc:
-          "Appbar+기본 화면 스크린 구현",
-        used: "활용영역 : 메인화면, 서브화면, 컨텐츠 피드 리스트",
-        url: "https://framer.cloud/oDSkN",
-        date: "2018-4-20",
-        tag: ["#ScrollComponent"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/NmZeao/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 5,
-        type: 1,
-        title: "04. Time series, zoomable",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_05.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_05.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f05.gif",
-        desc:
-          "페이지 스와이프와 탭메뉴 항목 터치로 컨텐츠 영역 이동",
-        used: "활용영역 : 메인화면, 서브화면, 탭메뉴",
-        url: "https://framer.cloud/GsTEt",
-        date: "2018-4-20",
-        tag: ["#PageComponent","#for in", "#change:", "#states"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/LvKMOL/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 4,
-        type: 1,
-        title: "05. Spline with inverted axes",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_04.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_04.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f04.gif",
-        desc:
-          "하트 탭시 피드백 애니메이션 적용",
-        used: "활용영역 : 좋아요, 하트 버튼 터치피드백",
-        url: "https://framer.cloud/wocaT",
-        date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "if else"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/rbEopx/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
-      {
-        id: 3,
-        type: 1,
-        title: "06. With annotations",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_03.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_03.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f03.gif",
-        desc:
-          "스플래시 배경 렌덤으로 노출. 5초간 배경 애니메이션 진행후, 홈화면 진입",
-        used: "활용영역 : 스플래시 화면",
-        url: "https://framer.cloud/dVLZa",
-        date: "2018-4-20",
-        tag: ["#Array", "#Utils.randomChoice", "Utils.delay"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLdW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+          '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/qzzZmP/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
         type: 1,
-        title: "07. Spline with symbols",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_02.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_02.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f02.gif",
-        desc:
-          "세로 스크롤 페이지안에서 가로 스크롤 가능",
-        used: "활용영역 : 메인화면 스크롤",
-        url: "https://framer.cloud/oGUNk",
+        title: "02. With data labels",
+        jpgImg: "http://ux.skplanet.com/chart/images/01_line_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/01_line_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/01_line_02.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터 추세를 살펴볼 때 사용합니다.",
+        used: "C.link / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#ScrollComponent"],
+        tag: ["#line"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/VNJqQr/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+          '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/BggKZb/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
-        id: 1,
+        id: 3,
         type: 1,
-        title: "08. Spline with plot bands",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/line_01.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
+        title: "03. With annotations",
+        jpgImg: "http://ux.skplanet.com/chart/images/01_line_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/01_line_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/01_line_03.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터 추세를 살펴볼 때 사용합니다.",
+        used: "C.link / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
+        tag: ["#line"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/bPPpmG/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 1,
+        title: "04. Spline with symbols",
+        jpgImg: "http://ux.skplanet.com/chart/images/01_line_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/01_line_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/01_line_04.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터 추세를 살펴볼 때 사용합니다.",
+        used: "C.link / 대기질 모니터링 시스템",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#line"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/JQQXNy/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 5,
+        type: 1,
+        title: "05. Time data with irregular intervals",
+        jpgImg: "http://ux.skplanet.com/chart/images/01_line_05.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/01_line_thumb_05.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/01_line_05.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터 추세를 살펴볼 때 사용합니다.",
+        used: "C.link / 대기질 모니터링 시스템",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#line"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/GbbZmY/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 6,
+        type: 1,
+        title: "06. Line chart with 500k points",
+        jpgImg: "http://ux.skplanet.com/chart/images/01_line_06.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/01_line_thumb_06.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/01_line_06.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터 추세를 살펴볼 때 사용합니다.",
+        used: "C.link / 대기질 모니터링 시스템",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#line"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/dBBXWL/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     area: [
@@ -167,166 +135,563 @@ const itemList = {
         id: 1,
         type: 2,
         title: "01. Basic area",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_01.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
+        jpgImg: "http://ux.skplanet.com/chart/images/02_area_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/02_area_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/02_area_01.jpg",
+        desc: 
+        "특성을 대략적으로 파악할 때 사용합니다",
+        used: "RB Insight / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
+        tag: ["#area"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/wLLOjW/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
         type: 2,
         title: "02. Area with negative values",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_02.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
+        jpgImg: "http://ux.skplanet.com/chart/images/02_area_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/02_area_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/02_area_02.jpg",
+        desc: 
+        "특성을 대략적으로 파악할 때 사용합니다",
+        used: "RB Insight / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
+        tag: ["#area"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/LKKaeM/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 3,
         type: 2,
         title: "03. Stacked area",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_03.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
+        jpgImg: "http://ux.skplanet.com/chart/images/02_area_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/02_area_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/02_area_03.jpg",
+        desc: 
+        "특성을 대략적으로 파악할 때 사용합니다",
+        used: "RB Insight / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
+        tag: ["#area"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/mZNdwZ/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 4,
         type: 2,
         title: "04. Percentage area",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_04.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
+        jpgImg: "http://ux.skplanet.com/chart/images/02_area_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/02_area_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/02_area_04.jpg",
+        desc: 
+        "특성을 대략적으로 파악할 때 사용합니다",
+        used: "RB Insight / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
+        tag: ["#area"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/zVgYEW/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 5,
         type: 2,
-        title: "05. Area with missing points",
-        jpgImg: "http://ux.skplanet.com/chart/images/fs_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/area_05.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/f01.gif",
-        desc:
-          "북마크 탭시 피드백 애니메이션 적용. 토글버튼 형태의 컨텐츠 저장 인터랙션",
-        used: "활용영역 : 북마크 저장, 찜하기",
-        url: "https://framer.cloud/MLuOd",
+        title: "05. Area-spline",
+        jpgImg: "http://ux.skplanet.com/chart/images/02_area_05.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/02_area_thumb_05.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/02_area_05.jpg",
+        desc: 
+        "특성을 대략적으로 파악할 때 사용합니다",
+        used: "RB Insight / 대기질 모니터링 시스템",
+        url: "-",
         date: "2018-4-20",
-        tag: ["#states", "#switchInstant", "#if else"],
+        tag: ["#area"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="zbbEXL" src="//codepen.io/ugen/embed/WWqLMW/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      }
-    ],
-    lottie: [
-      {
-        id: 5,
-        type: 7,
-        title: "Spline with inverted axes",
-        jpgImg: "http://ux.skplanet.com/chart/images/ls_05.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/lottie_05.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/l05.gif",
-        desc:
-          "탭을 시작하면 지문인식 형태의 애니메이션 시작, 엔드하면 애니메이션 정지 / 애니메이션이 모두 완료되면 다음 페이지로 이동",
-        used: "활용영역 : 인증관련 화면 / 결제화면",
-        url: "https://framer.cloud/HgyUQ",
-        date: "2018-11-26",
-        tag: ["#LottieLayer", "#FlowComponent"],
-        source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="lottie_05" src="//codepen.io/ugen/embed/vMOmNM/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/BgXyZd/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
-        id: 4,
-        type: 9,
-        title: "Time series, zoomable",
-        jpgImg: "http://ux.skplanet.com/chart/images/ls_04.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/lt_04.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/l04.gif",
-        desc:
-          "햄버거 메뉴에서 뒤로가기로 트랜지션 구간 애니메이션 / 전체화면 메뉴 노출",
-        used: "활용영역 : 햄버거 메뉴 / 카테고리 메뉴",
-        url: "https://framer.cloud/uaTem",
-        date: "2018-11-26",
-        tag: ["#LottieLayer", "#states"],
+        id: 6,
+        type: 2,
+        title: "06. Area range and line",
+        jpgImg: "http://ux.skplanet.com/chart/images/02_area_06.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/02_area_thumb_06.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/02_area_06.jpg",
+        desc: 
+        "특성을 대략적으로 파악할 때 사용합니다",
+        used: "RB Insight / 대기질 모니터링 시스템",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#area"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="lottie_04"  src="//codepen.io/ugen/embed/JVdNXa/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/qzeEvZ/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    
+    bar: [
+      {
+        id: 1,
+        type: 3,
+        title: "01. Basic bar",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_01.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/XLvbgd/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 3,
+        title: "02. Stacked bar",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_02.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/wLVaPN/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 3,
         type: 3,
-        title: "With data labels",
-        jpgImg: "http://ux.skplanet.com/chart/images/ls_03.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/lottie_03.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/l03.gif",
-        desc:
-          "일러스트 파일을 에프터이펙트에서 Shape 레이어로 변경 / Shape레이어를 스케일 애니메이션 적용",
-        used: "활용영역 : 스플래시 / 일러스트 Shape 활용",
-        url: "https://framer.cloud/qecgA",
-        date: "2018-11-26",
-        tag: ["#LottieLayer"],
+        title: "03. Basic column",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_03.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="lottie_03" src="//codepen.io/ugen/embed/BENRLo/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/zVgGJN/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 3,
+        title: "04. Column with negative values",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_04.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/GbVJzP/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 5,
+        type: 3,
+        title: "05. Stacked column",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_05.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_05.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_05.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/JQgdgM/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 6,
+        type: 3,
+        title: "06. Area range and lineStacked percentage column",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_06.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_06.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_06.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/LKwpEm/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 7,
+        type: 3,
+        title: "07. Column with drilldown",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_07.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_07.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_07.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/dBxYRw/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 8,
+        type: 3,
+        title: "08. Column range",
+        jpgImg: "http://ux.skplanet.com/chart/images/03_bar_08.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/03_bar_thumb_08.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/03_bar_08.jpg",
+        desc: 
+        "시간의 경과에 따른 데이터의 변동을 표시하거나 항목을 비교할 때 씁니다.",
+        used: "ADT Capstec / DMP",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#bar"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/pXMjWe/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    pie: [
+      {
+        id: 1,
+        type: 4,
+        title: "01. Pie chart",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#pie"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/JQgqMb/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 4,
+        title: "02. Pie with legend",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#pie"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/ewqajp/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 3,
+        type: 4,
+        title: "03. Donut chart",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_03.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#pie"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/ydmWQy/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 4,
+        title: "04. Semi circle donut",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_04.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#pie"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/WqVBYB/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 5,
+        type: 4,
+        title: "05. Pie with drilldown",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_05.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_05.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_05.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/ydmWZy/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 6,
+        type: 4,
+        title: "06. Pie with monochrome fill",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_06.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_06.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_06.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/zVgQVN/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 7,
+        type: 4,
+        title: "07. Variable radius pie",
+        jpgImg: "http://ux.skplanet.com/chart/images/04_pie_07.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/04_pie_thumb_07.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/04_pie_07.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/NZQVQZ/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    scatter: [
+      {
+        id: 1,
+        type: 5,
+        title: "01. Scatter plot",
+        jpgImg: "http://ux.skplanet.com/chart/images/05_scatter_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/05_scatter_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/05_scatter_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/xovogp/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 5,
+        title: "02. Bubble chart",
+        jpgImg: "http://ux.skplanet.com/chart/images/05_scatter_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/05_scatter_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/05_scatter_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/gNVNWJ/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    combinations: [
+      {
+        id: 1,
+        type: 6,
+        title: "01. Synchronized charts",
+        jpgImg: "http://ux.skplanet.com/chart/images/06_combinations_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/06_combinations_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/06_combinations_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/PrMrOM/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 6,
+        title: "02. Column, line and pie",
+        jpgImg: "http://ux.skplanet.com/chart/images/06_combinations_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/06_combinations_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/06_combinations_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/mZNZpg/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 3,
+        type: 6,
+        title: "03. Dual axes, line and column",
+        jpgImg: "http://ux.skplanet.com/chart/images/06_combinations_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/06_combinations_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/06_combinations_03.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/MMNNwr/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 6,
+        title: "04. Multiple axes",
+        jpgImg: "http://ux.skplanet.com/chart/images/06_combinations_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/06_combinations_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/06_combinations_04.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/JQggdx/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    styled: [
+      {
+        id: 1,
+        type: 7,
+        title: "01. Styled mode column",
+        jpgImg: "http://ux.skplanet.com/chart/images/07_styled_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/07_styled_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/07_styled_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/QeLwMO/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
         type: 7,
-        title: "Ajax loaded data, clickable points",
-        jpgImg: "http://ux.skplanet.com/chart/images/ls_02.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/lt_02.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/l02.gif",
-        desc:
-          "라인 애니메이션을 활용한 스플래시 / 하단 버튼 탭시 Pause/Stop 컨트롤",
-        used: "활용영역 : 스플래시 / 플레이어",
-        url: "https://framer.cloud/phpva",
-        date: "2018-11-26",
-        tag: ["#LottieLayer", "#states"],
+        title: "02. Styled mode pie",
+        jpgImg: "http://ux.skplanet.com/chart/images/07_styled_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/07_styled_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/07_styled_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="lottie_02" src="//codepen.io/ugen/embed/eoNWgy/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
-      },
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/voBEeN/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    accessible: [
       {
         id: 1,
-        type: 3,
-        title: "Basic line",
-        jpgImg: "http://ux.skplanet.com/chart/images/ls_01.jpg",
-        jpgImg_s: "http://ux.skplanet.com/chart/images/lt_01.jpg",
-        gifImg: "http://ux.skplanet.com/chart/images/l01.gif",
-        desc:
-          "에프터이펙트로 만든 애니메이션 Lottie json파일을 모듈을 활용하여 프레이머에서 테스트 가능하게 제작",
-        used: "활용영역 : 스플래시 / 애니메이션",
-        url: "https://framer.cloud/vvVaY",
-        date: "2018-11-26",
-        tag: ["#LottieLayer"],
+        type: 8,
+        title: "01. Accessible line chart",
+        jpgImg: "http://ux.skplanet.com/chart/images/08_accessible_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/08_accessible_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/08_accessible_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
         source:
-          '<iframe height="800" style="width: 100%;" scrolling="no" title="lottie_01" src="//codepen.io/ugen/embed/NmqjpR/?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/QeLwMO/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 8,
+        title: "02. Accessible pie chart",
+        jpgImg: "http://ux.skplanet.com/chart/images/08_accessible_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/08_accessible_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/08_accessible_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/ZgzYaM/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
-      
     ],
+    dynamic: [
+      {
+        id: 1,
+        type: 9,
+        title: "01. Spline updating each second",
+        jpgImg: "http://ux.skplanet.com/chart/images/09_dynamic_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/09_dynamic_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/09_dynamic_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/gVYbvL/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 9,
+        title: "02. Click to add a point",
+        jpgImg: "http://ux.skplanet.com/chart/images/09_dynamic_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/09_dynamic_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/09_dynamic_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/GVKgdN/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 3,
+        type: 9,
+        title: "03. Update options after render",
+        jpgImg: "http://ux.skplanet.com/chart/images/09_dynamic_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/09_dynamic_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/09_dynamic_03.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/MNgYZz/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    lottie: [],
     principle: [
       
     ],

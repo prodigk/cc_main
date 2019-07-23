@@ -378,7 +378,9 @@ $nav-height: 300;
 .wrap_tab {
   position:absolute;
   top:63px;
+  //센터align
   right:-400px;
+  //left:0;
   z-indeX:9999;
   width:100%;
   min-width:1178px
