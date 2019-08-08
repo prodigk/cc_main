@@ -2,19 +2,19 @@ const itemList = {
   typeList: {
     // 카테고리 리스트
     0: "All",
-    1: "line",
-    2: "area",
-    3: "bar",
-    4: "pie",
-    5: "scatter",
-    6: "combinations",
-    7: "styled",
-    8: "accessible",
-    9: "dynamic",
-    10: "d3",
-    11: "gauges",
-    12: "heatmap",
-    13: "more"
+    1: "Line Charts",
+    2: "Area Charts",
+    3: "Column & Bar Charts",
+    4: "Pie Charts",
+    5: "Scatter & Bubble Charts",
+    6: "Combinations",
+    7: "Styled mode (CSS Styling)",
+    8: "Accessible Charts",
+    9: "Dynamic Charts",
+    10: "3D Charts",
+    11: "Gauges",
+    12: "Heat & Tree Maps",
+    13: "More Chart Types"
   },
   item: {
     /*framer: [ // TOOL 명
@@ -689,6 +689,254 @@ const itemList = {
         tag: ["#-"],
         source:
         '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/MNgYZz/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    d3: [
+      {
+        id: 1,
+        type: 10,
+        title: "01. 3D column",
+        jpgImg: "http://ux.skplanet.com/chart/images/10_3d_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/10_3d_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/10_3d_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/RXbPag/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 10,
+        title: "3D funnel",
+        jpgImg: "http://ux.skplanet.com/chart/images/10_3d_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/10_3d_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/10_3d_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/mNbJrB/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 3,
+        type: 10,
+        title: "03. 3D column with stacking and grouping",
+        jpgImg: "http://ux.skplanet.com/chart/images/10_3d_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/10_3d_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/10_3d_03.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/KOPpWE/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    gauges: [
+      {
+        id: 1,
+        type: 11,
+        title: "01. Gauge series",
+        jpgImg: "http://ux.skplanet.com/chart/images/11_gauge_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/11_gauge_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/11_gauge_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/OKLVOE/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 11,
+        title: "Solid gauge",
+        jpgImg: "http://ux.skplanet.com/chart/images/11_gauge_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/11_gauge_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/11_gauge_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/XvrbEm/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    heatmap: [
+      {
+        id: 1,
+        type: 12,
+        title: "01. Heat map",
+        jpgImg: "http://ux.skplanet.com/chart/images/12_heatmap_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/12_heatmap_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/12_heatmap_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/YmKyyv/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 12,
+        title: "02. Large heat map",
+        jpgImg: "http://ux.skplanet.com/chart/images/12_heatmap_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/12_heatmap_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/12_heatmap_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/mNbeMo/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 3,
+        type: 12,
+        title: "03. Tree map with color axis",
+        jpgImg: "http://ux.skplanet.com/chart/images/12_heatmap_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/12_heatmap_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/12_heatmap_03.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/YmKyad/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 12,
+        title: "04. Tree map with levels",
+        jpgImg: "http://ux.skplanet.com/chart/images/12_heatmap_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/12_heatmap_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/12_heatmap_04.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/PMYPaY/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      }
+    ],
+    more: [
+      {
+        id: 1,
+        type: 13,
+        title: "01. Variwide",
+        jpgImg: "http://ux.skplanet.com/chart/images/13_more_01.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/13_more_thumb_01.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/13_more_01.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/rXBOgJ/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 2,
+        type: 13,
+        title: "02. Bell curve",
+        jpgImg: "http://ux.skplanet.com/chart/images/13_more_02.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/13_more_thumb_02.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/13_more_02.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/JgPYge/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 3,
+        type: 13,
+        title: "03. Pyramid chart",
+        jpgImg: "http://ux.skplanet.com/chart/images/13_more_03.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/13_more_thumb_03.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/13_more_03.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/JgPGYw/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 4,
+        type: 13,
+        title: "04. Sankey diagram",
+        jpgImg: "http://ux.skplanet.com/chart/images/13_more_04.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/13_more_thumb_04.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/13_more_04.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/wVwMeJ/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 5,
+        type: 13,
+        title: "05. Word cloud",
+        jpgImg: "http://ux.skplanet.com/chart/images/13_more_05.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/13_more_thumb_05.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/13_more_05.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/oKvbGv/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
+      },
+      {
+        id: 6,
+        type: 13,
+        title: "06. Timeline",
+        jpgImg: "http://ux.skplanet.com/chart/images/13_more_06.jpg",
+        jpgImg_s: "http://ux.skplanet.com/chart/images/13_more_thumb_06.jpg",
+        gifImg: "http://ux.skplanet.com/chart/images/13_more_06.jpg",
+        desc: 
+        "항목을 비율로 표기하므로 항목이 적고 데이터 값들이 차이가 많이 날 때 사용합니다.",
+        used: "ADT Capstec / iOT Sensor Solution",
+        url: "-",
+        date: "2018-4-20",
+        tag: ["#-"],
+        source:
+        '<iframe height="540" style="width: 100%;" scrolling="no" title="Highcharts Sample" src="//codepen.io/ugen/embed/OKLMzW/?height=540&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     lottie: [],

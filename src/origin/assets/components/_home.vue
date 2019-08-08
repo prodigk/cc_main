@@ -54,15 +54,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+  
           </div>
         </div>
       </div>
@@ -86,15 +78,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+   
           </div>
         </div>
       </div>
@@ -118,15 +102,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+   
           </div>
         </div>
       </div>
@@ -150,15 +126,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+     
           </div>
         </div>
       </div>
@@ -182,15 +150,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+      
           </div>
         </div>
       </div>
@@ -214,15 +174,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+   
           </div>
         </div>
       </div>
@@ -246,15 +198,7 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+
           </div>
         </div>
       </div>
@@ -278,21 +222,107 @@
             </a>
             <span class="text-cate"> </span>
             <strong class="title-item">{{ tools.title }}</strong>
-            <!--
-            <p class="text-desc">{{ tools.desc }}</p>
-            <p class="text-type">{{ tools.used }}</p>
-            <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
-            <ul class="wrap-tag">
-              <li v-for="tags in tools.tag" :key="tags">
-                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
-              </li>
-            </ul>-->
+          
           </div>
         </div>
       </div>
       <!-- dynamic 영역 끝 -->
-    
-    
+      <!-- 3D영역 -->
+      <div class="view-item" data-tool="d3" id="d3">
+        <div class="list-item">
+          <h3 class="title-sub">3D Charts<span class="none-text">목록이 없습니다.</span></h3>
+          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <div class="list-line"></div>
+          <div class="item" v-for="(tools, index) in d3Item" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate"> </span>
+            <strong class="title-item">{{ tools.title }}</strong>
+
+          </div>
+        </div>
+      </div>
+      <!-- 3D 영역 끝 -->
+      <!-- Gauge영역 -->
+      <div class="view-item" data-tool="gauges" id="gauges">
+        <div class="list-item">
+          <h3 class="title-sub">Gauges<span class="none-text">목록이 없습니다.</span></h3>
+          <h4 class="list-desc">게이지는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <div class="list-line"></div>
+          <div class="item" v-for="(tools, index) in gaugesItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate"> </span>
+            <strong class="title-item">{{ tools.title }}</strong>
+
+          </div>
+        </div>
+      </div>
+      <!-- Gauge 영역 끝 -->
+      <!-- Heatmap영역 -->
+      <div class="view-item" data-tool="heatmap" id="heatmap">
+        <div class="list-item">
+          <h3 class="title-sub"> Heat & Tree Maps<span class="none-text">목록이 없습니다.</span></h3>
+          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <div class="list-line"></div>
+          <div class="item" v-for="(tools, index) in heatmapItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate"> </span>
+            <strong class="title-item">{{ tools.title }}</strong>
+
+          </div>
+        </div>
+      </div>
+      <!-- Heapmap 영역 끝 -->
+      <!-- More 영역 -->
+      <div class="view-item" data-tool="more" id="more">
+        <div class="list-item">
+          <h3 class="title-sub"> More Chart Types<span class="none-text">목록이 없습니다.</span></h3>
+          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <div class="list-line"></div>
+          <div class="item" v-for="(tools, index) in moreItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate"> </span>
+            <strong class="title-item">{{ tools.title }}</strong>
+
+          </div>
+        </div>
+      </div>
+      <!-- More 영역 끝 -->
     
     </div>
     

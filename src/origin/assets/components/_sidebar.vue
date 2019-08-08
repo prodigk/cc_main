@@ -116,20 +116,20 @@
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#heatmap'">
+          <div class="link-nav" v-on:click="selCate(filterCate(12))" v-scroll-to="'#heatmap'">
             <router-link to="/home">
               <span class="nav-icon icon-heat"></span>
               <strong class="title-cate">Heat & Tree Maps</strong>
-              <span class="count-cate">({{ filteredCount(11).length }})</span>
+              <span class="count-cate">({{ filteredCount(12).length }})</span>
             </router-link>
           </div>
         </li>
         <li>
-          <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#more'">
+          <div class="link-nav" v-on:click="selCate(filterCate(13))" v-scroll-to="'#more'">
             <router-link to="/home">
               <span class="nav-icon icon-more"></span>
               <strong class="title-cate">More Chart Types</strong>
-              <span class="count-cate">({{ filteredCount(11).length }})</span>
+              <span class="count-cate">({{ filteredCount(13).length }})</span>
             </router-link>
           </div>
         </li>
@@ -237,6 +237,7 @@
         },
         filteredCount: function(e) {
           let allItem = this.lineItem.concat(this.areaItem,this.barItem,this.pieItem,this.scatterItem,this.combinationsItem,this.styledItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
+          // let allItem = this.lineItem.concat(this.areaItem,this.barItem,this.pieItem,this.scatterItem,this.combinationsItem,this.styledItem,this.accessibleItem,this.dynamicItem,this.d3Item,this.gaugesItem,this.heatmapItem,this.moreItem)
           if(e == 0){
             return allItem
           } else if (e == 1) {
@@ -269,6 +270,7 @@
         },
         filteredTags : function() {
           let allItem = this.lineItem.concat(this.areaItem,this.lottieItem,this.principleItem,this.sketchItem,this.htmlItem)
+          // let allItem = this.lineItem.concat(this.areaItem,this.barItem,this.pieItem,this.scatterItem,this.combinationsItem,this.styledItem,this.accessibleItem,this.dynamicItem,this.d3Item,this.gaugesItem,this.heatmapItem,this.moreItem)
           let key = 'tag';
           let tagArray = new Array();
           for(let i =0;i<allItem.length;i++){
