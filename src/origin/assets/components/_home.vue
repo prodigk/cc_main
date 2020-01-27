@@ -39,7 +39,7 @@
       <div class="view-item" data-tool="area" id="area">
         <div class="list-item">
           <h3 class="title-sub">Area Charts<span class="none-text">목록이 없습니다.</span></h3>
-          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <h4 class="list-desc">영역그래프는 자료의 구분을 쉽게 하기 위해 적절한 색을 칠할 수도 있고 빗살무늬 등의 무늬로 면적을 표시할 수도 있습니다. <br>일반적으로 면적을 표시할 때 채울 색은 일정한 투명도를 가져야 합니다.통명도는 사용자가 서로 부동한 시리즈 간의 중첩 관계를 관찰하도록 도와드립니다.</h4>
           <div class="list-line"></div>
           <div class="item" v-for="(tools, index) in areaItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
@@ -63,7 +63,7 @@
       <div class="view-item" data-tool="bar" id="bar">
         <div class="list-item">
           <h3 class="title-sub">Column & Bar Charts<span class="none-text">목록이 없습니다.</span></h3>
-          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <h4 class="list-desc">막대그래프는 조사한 수를 막대로 나타내고 표에 비해 여러 항목의 수량을 전체적으로 비교하기 쉽습니다. <br>사람의 눈은 높이 차이에 민감함으로써 집간 간의 데이터의 차이를 표현할 때, 최고가, 최저가, 종가 모두가 필요할 때 사용 됩니다.</h4>
           <div class="list-line"></div>
           <div class="item" v-for="(tools, index) in barItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
@@ -87,7 +87,8 @@
       <div class="view-item" data-tool="pie" id="pie">
         <div class="list-item">
           <h3 class="title-sub">Pie Charts<span class="none-text">목록이 없습니다.</span></h3>
-          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <h4 class="list-desc">비례 관계를 구성할 때는 파이그래프를 사용하여 전체적인 이미지를 보여주고, 각 부분이 차지하는 전체의 백분율을 나타낼 수 있습니다. <br>
+          파이그래프가 최대한 작용하도록 하기 위해서는 6가지 성분을 넘어서는 안됩니다. 사람의 시선은 시계방향으로 관찰하는 것이 상대적으로 익숙하기 때문에 가장 중요한 부분을 12시 위치에 두어야 합니다. <br>만약에 특변한 중요한 부분이 없다면 크기별로 배열하는 것을 고려해야 합니다.</h4>
           <div class="list-line"></div>
           <div class="item" v-for="(tools, index) in pieItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
@@ -111,7 +112,7 @@
       <div class="view-item" data-tool="scatter" id="scatter">
         <div class="list-item">
           <h3 class="title-sub">Scatter & Bubble Charts<span class="none-text">목록이 없습니다.</span></h3>
-          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <h4 class="list-desc">산점도에서 데이터점의 분포를 살펴봄으로써 변수 간의 상관성을 추론할 수 있습니다. <br>변수 간의 상호 관계가 존재하지 않으면 산점도에서는 이산점을 랜덤하게 분포하는 것으로 표현되는 반면에 어떤 연관성이 있으면 대부분의 데이터점은 상대적으로 밀집되어 별도 추세로 나타날 것입니다.</h4>
           <div class="list-line"></div>
           <div class="item" v-for="(tools, index) in scatterItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
@@ -279,7 +280,7 @@
       <div class="view-item" data-tool="heatmap" id="heatmap">
         <div class="list-item">
           <h3 class="title-sub"> Heat & Tree Maps<span class="none-text">목록이 없습니다.</span></h3>
-          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <h4 class="list-desc">열지도는 지리적 구역에 있는 각 점의 가중치를 나타내고 특별히 하이라이트 형식으로 방문객이 자주 방문하는 영역 및 방문객이 있는 지리적 영역을 표시합니다. 열지도의 색상은 일반적으로 밀도를 의미합니다.</h4>
           <div class="list-line"></div>
           <div class="item" v-for="(tools, index) in heatmapItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
@@ -303,7 +304,7 @@
       <div class="view-item" data-tool="more" id="more">
         <div class="list-item">
           <h3 class="title-sub"> More Chart Types<span class="none-text">목록이 없습니다.</span></h3>
-          <h4 class="list-desc">라인 차트는 뷰의 개별 데이터 요소를 연결하고 일련의 값을 시각화하는 간단한 방법을 제공하며, 시간별 추세를 확인하거나 미래 값을 예측하려는 경우에 유용합니다.</h4>
+          <h4 class="list-desc">피라미드 차트, 다이어그램, 타임라인, 워드 클라우드 등 특정 차트를 활용하여 목적에 맞는 데이터를 시각화 시킬 때에 효과적입니다.</h4>
           <div class="list-line"></div>
           <div class="item" v-for="(tools, index) in moreItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
